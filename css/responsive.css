@@ -1,0 +1,43 @@
+/* responsive */
+.box_sp {
+    display: none;
+}
+
+.box_pc {
+    display: block;
+}
+/*responsive */
+
+@media screen and (max-width: 1366px) {
+}
+
+@media screen and (max-width: 1024px) {
+}
+
+@media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 640px) {
+    .box_sp {
+        display: block;
+    }
+
+    .box_pc {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 560px) {
+}
+
+@media screen and (max-width: 490px) {
+}
+
+@media screen and (max-width: 375px) {
+}
+
+@media screen and (max-width: 320px) {
+}
+
+@media screen and (min-width: 100px) and (max-width: 800px) {
+}
