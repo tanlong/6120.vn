@@ -103,7 +103,7 @@ body {
   height: 48px;
   line-height: 48px;
   border-bottom: 1px solid #efefef;
-  border-top: 1px solid #fbfbfb;
+  /* border-top: 1px solid #fbfbfb; */
 }
 .menu li a {
   color: #555;
