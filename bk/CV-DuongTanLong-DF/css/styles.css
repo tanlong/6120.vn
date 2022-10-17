@@ -103,7 +103,7 @@ body {
   height: 48px;
   line-height: 48px;
   border-bottom: 1px solid #efefef;
-  /* border-top: 1px solid #fbfbfb; */
+  border-top: 1px solid #fbfbfb;
 }
 .menu li a {
   color: #555;
@@ -232,14 +232,13 @@ ul li {
 }
 .box_content {
   margin-bottom: 30px;
-  text-align: left;
 }
 .box_content li span {
   color: #999;
   margin-right: 10px;
 }
 .box_content p {
-  text-align: left;
+  text-align: justify;
 }
 .box_content p.title {
   text-transform: uppercase;
@@ -360,7 +359,7 @@ ul li {
   transition: all ease 2s;
 }
 #section2 .box_experience_work.active_timeline::before {
-  height: 62%;
+  height: 68%;
   transition: all ease 2s;
 }
 .box_experience_work {
@@ -395,12 +394,9 @@ ul li {
 .main_title {
   margin-bottom: 115px;
 }
-.main_title p{
-  text-align: left;
-}
 .point_year {
   background: #eee;
-  padding: 10px 22px;
+  padding: 10px 28px;
   border-radius: 30px;
   display: inline-block;
   position: relative;
@@ -436,14 +432,7 @@ ul li {
   text-align: center;
 }
 .intro_header .title{
-  font-weight: bold;
-  text-align: center;
-  margin-bottom: 0px;
-}
-.intro_header .small-title,.small-title{
-  font-size: 12px;
-  text-align: center;
-  color: #999;
+  padding-bottom: 10px;
 }
 .title{
   font-weight: bold;
@@ -480,11 +469,7 @@ ul li {
   -webkit-transform: scale(0.3);
   -webkit-transform-origin: 0 0;
 }
-.intro_content_img img {
-  max-width: 100%;
-  max-height: 100%;
-}
-.bg_intro_content_img  img {
+.intro_content_img img, .bg_intro_content_img  img {
   max-width: 100%;
   max-height: 100%;
 }
@@ -618,98 +603,6 @@ button:focus {
 .box-slider{
   margin: 0 50px;
 }
-.box-prototype{
-  margin: 0 auto;
-  position: relative;
-  z-index: 10;
-  text-align: center;
-  border: 1px solid #eee;
-  padding: 10px;
-  background: #fafafa;
-}
-.bg_intro_content_img .box-img-scroll{
-  position: absolute;
-  width: 540px;
-  height: 303px;
-  z-index: 9;
-  background: rgba(255,255,255,0.7);
-  top: 25px;
-  left: 130px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: all ease 0.3s;
-  display: none;
-}
-/* hover */
-.bg_intro_content_img .box-img-scroll{
-  display: none!important;
-}
-
-.bg_intro_content_img .box-img-scroll img{
-  width: 130px;
-  box-shadow: 0px 0px 5px #999;
-  border-radius: 16px;
-}
-/* .bg_intro_content_img .box-img-scroll:hover img{
-  width: 0px;
-} */
-.bg_intro_content_img .box-img-click{
-  position: absolute;
-  width: 540px;
-  height: 303px;
-  z-index: 9;
-  top: 25px;
-  left: 130px;
-  display: flex;
-  justify-content: center;
-  transition: all ease 0.3s;
-}
-/* hover */
-.bg_intro_content_img .box-img-click{
-  display: none!important;
-}
-
-.bg_intro_content_img .box-img-click img{
-  width: 44px;
-  height: 44px;
-  position: absolute;
-  top: 50%;
-  display: none;
-}
-.project-box{
-  padding: 100px 150px 100px 150px;
-}
-.project-title{
-    font-weight: bold;
-    font-size: 18px;
-    border-bottom: 1px solid #999;
-    padding-bottom: 16px;
-    margin-bottom: 24px;
-    text-transform: uppercase;
-}
-.project-item{
-  border-bottom: 1px solid #eee;
-  padding-bottom: 24px;
-  margin-bottom: 24px;
-}
-.project-item .project-item-title{
-  font-weight: bold;
-  margin-bottom: 8px;
-}
-.project-item .project-item-position{
-  color: #999;
-  margin-bottom: 5px;
-}
-.project-item ul{
-  padding-left: 16px;
-}
-.project-item ul li{
-  list-style: circle;
-  line-height: 30px;
-}
-
-/* slick */
 .slick-prev:hover, .slick-prev:focus, .slick-next:hover, .slick-next:focus {
   color: transparent;
   outline: none;
@@ -756,30 +649,6 @@ button:focus {
 }
 .slick-prev:hover:before, .slick-prev:focus:before, .slick-next:hover:before, .slick-next:focus:before {
   opacity: 1;
-}
-.box_website{
-  display: flex;
-  margin: 0 30px;
-  justify-content: space-between;
-}
-.box_website .box_img_web{
-    height: 300px;
-    width: 400px;
-    overflow: hidden;
-    border: 5px solid #eee;
-    position: relative;
-    padding: 0;
-}
-.box_website .box_img_web a{
-  display: block;
-transform: translateY(0%);
-  width: 100%;
-  transition: all ease 3s;
-}
-.box_website .box_img_web a:hover{
-  transform: translateY(calc(-100% + 280px));
-  width: 100%;
-  transition: all ease 3s;
 }
 /*==========================================================================*/
 

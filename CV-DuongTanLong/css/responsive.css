@@ -7,13 +7,30 @@
   display: block;
 }
 /*responsive */
+@viewport{
+  width: device-width;
+  zoom: 0;
+}
+
+@-ms-viewport{
+  width: device-width;
+}
 
 @media screen and (max-width: 1366px) {
+  .page{
+    width: 880px;
+  }
+  #section2 .box_experience_work.active_timeline::before {
+    height: 60%;
+  }
 }
 
 @media screen and (max-width: 1360px) {
   .menu {
     display: none;
+  }
+  .page{
+    width: 100%;
   }
 }
 @media screen and (max-width: 1180px) {
@@ -40,4 +57,68 @@
 }
 
 @media screen and (min-width: 100px) and (max-width: 800px) {
+}
+
+/*  iphone 7  */
+@media only screen and (min-width: 375px) and (max-width: 767px) { 
+  .page{
+    width: 100%;
+    height: 100%;
+  }
+  .page.page_o{
+    height: 100%;
+  }
+  .content,.main_cv,.project-box{
+    padding: 40px;
+  }
+  .main_cv .left,  .main_cv .right{
+    width: 100%;
+  }
+  .main_cv .left{
+    padding: 160px 0px 0px 0px;
+    background: #fff;
+  }
+  .box-prototype iframe{
+    width: 100%;
+  }
+  .project-title{
+    position: relative;
+    z-index: 20;
+  }
+  .intro_content_img{
+    width: 100%;
+    height: 100%;
+  }
+  .bg_intro_content_img{
+    width: 100%;
+    height: 100%;
+  }
+  .iframe_content_img{
+    display: none;
+  }
+  .bg_intro_content_img img{
+    display: none;
+  }
+  .bg_intro_content_img .box-img-scroll,.bg_intro_content_img .box-img-click{
+   display: none;
+  }
+  .main_title{
+    margin-bottom: 24px;
+  }
+  .intro_header .small-title, .small-title{
+    display: none;
+  }
+  .intro_content.intro_green::after, .intro_content.intro_blue::after,.intro_content.intro_red::after{
+    content: none;
+  }
+  .intro_header{
+    background: #fff;
+  }
+  .intro_content.intro_red .intro_content_img,.intro_content.intro_blue .intro_content_img{
+    height: 100%;
+
+  }
+  .intro_content.intro_red,.intro_content.intro_blue{
+    padding: 20px;
+  }
 }
